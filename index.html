@@ -57,7 +57,7 @@
         <button class="btn form-btn" onclick="apriForm()">
             Compila la tua presenza di oggi
         </button>
-        <a href="#" class="btn whatsapp-btn" onclick="entraWhatsApp()">
+        <a href="#" class="btn whatsapp-btn" id"whatsappLink">
             Entra nel Gruppo WhatsApp
         </a>
     </div>
@@ -65,9 +65,7 @@
         function apriForm() {
             window.open('https://forms.gle/EZJTcfbRwoCMrpdJ9', '_blank');
         }
-        function entraWhatsApp() {
-            window.open('https://chat.whatsapp.com/JSubDf9mzrE1WlWopqo5t9', '_blank');
-        }
+        document.getElementById('whatsappLink').href = 'https://chat.whatsapp.com/JSubDf9mzrE1WlWopqo5t9';
     </script>
 </body>
 </html>
