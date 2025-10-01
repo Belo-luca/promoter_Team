@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Pulsanti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 250px;
+        }
+        
+        .form-btn {
+            background-color: #007bff;
+        }
+        
+        .form-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #1da851;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benvenuto</h1>
+        <p>Scegli l'azione che vuoi compiere:</p>
+        
+        <!-- Pulsante per compilare il form -->
+        <button class="btn form-btn" onclick="apriForm()">
+            Compila il Form
+        </button>
+        
+        <!-- Pulsante per entrare nel gruppo WhatsApp -->
+        <a href="#" class="btn whatsapp-btn" id="whatsappLink">
+            Entra nel Gruppo WhatsApp
+        </a>
+    </div>
+
+    <script>
+        // Funzione per aprire il form
+        function apriForm() {
+            // Qui puoi inserire l'URL del tuo form Google, Typeform, ecc.
+            // Esempio con Google Forms:
+            window.open('https://forms.gle/EZJTcfbRwoCMrpdJ9', '_blank');
+        }
+
+        // Sostituisci con il link effettivo del tuo gruppo WhatsApp
+        document.getElementById('whatsappLink').href = 'https://chat.whatsapp.com/JSubDf9mzrE1WlWopqo5t9';
+        
+        // Oppure puoi usare questa funzione per il pulsante WhatsApp
+        function entraWhatsApp() {
+            // Sostituisci con il link effettivo del tuo gruppo WhatsApp
+            window.open('https://chat.whatsapp.com/your-group-link', '_blank');
+        }
+    </script>
+</body>
+</html>
