@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina con Pulsanti</title>
+    <title>Promoter Team</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,35 +52,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Benvenuto</h1>
-        <p>Scegli l'azione che vuoi compiere:</p>
-        
-        <!-- Pulsante per compilare il form -->
+        <h1>Benvenuto nel promoter team</h1>
+        <p>Compila il modulo ed entra nel gruppo whatsapp</p>
         <button class="btn form-btn" onclick="apriForm()">
-            Compila il Form
+            Compila la tua presenza di oggi
         </button>
-        
-        <!-- Pulsante per entrare nel gruppo WhatsApp -->
-        <a href="#" class="btn whatsapp-btn" id="whatsappLink">
+        <a href="#" class="btn whatsapp-btn">
             Entra nel Gruppo WhatsApp
         </a>
     </div>
-
     <script>
-        // Funzione per aprire il form
         function apriForm() {
-            // Qui puoi inserire l'URL del tuo form Google, Typeform, ecc.
-            // Esempio con Google Forms:
             window.open('https://forms.gle/EZJTcfbRwoCMrpdJ9', '_blank');
         }
-
-        // Sostituisci con il link effettivo del tuo gruppo WhatsApp
-        document.getElementById('whatsappLink').href = 'https://chat.whatsapp.com/JSubDf9mzrE1WlWopqo5t9';
-        
-        // Oppure puoi usare questa funzione per il pulsante WhatsApp
         function entraWhatsApp() {
-            // Sostituisci con il link effettivo del tuo gruppo WhatsApp
-            window.open('https://chat.whatsapp.com/your-group-link', '_blank');
+            window.open('https://chat.whatsapp.com/JSubDf9mzrE1WlWopqo5t9', '_blank');
         }
     </script>
 </body>
